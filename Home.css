@@ -1,0 +1,93 @@
+.home {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+  color: rgb(253, 252, 252); /* Make text white to contrast with dark background */
+}
+
+.home h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.home p {
+  font-size: 1.25rem;
+  color: #fff4f4; /* Slightly lighter text for contrast */
+}
+
+.home-cards {
+  padding: 20px 0;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center; /* Center the cards horizontally */
+  gap: 20px;
+  padding: 10px;
+  flex-wrap: wrap; /* Allow wrapping in case of screen resizing */
+}
+
+.card {
+  width: 350px; /* Increased card width */
+  height: 250px; /* Increased card height */
+  padding: 20px;
+  background-color: #020202;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out; /* Smooth animation on hover */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.card h3 {
+  font-size: 1.75rem; /* Larger text for card title */
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1.2rem; /* Larger text for description */
+}
+
+.home-image img {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Transparent black background for the modal */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: rgb(17, 17, 17);
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px; /* Increased width for modal */
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+p{
+  margin-top: 5%;
+}
