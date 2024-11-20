@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.about-container {
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  overflow-y: auto;
+  margin-top: 4rem; /* Adjust for the height of the navigation bar */
+  height: calc(100vh - 4rem); /* Full height minus nav height */
+  width: 100%; /* Full width */
+  box-sizing: border-box;
+}
+
+/* Scrollbar styles */
+.about-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.about-container::-webkit-scrollbar-thumb {
+  background: #064c97;
+  border-radius: 5px;
+}
+
+.about-container::-webkit-scrollbar-thumb:hover {
+  background: #0a6fc2;
+}
+
+.about-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #64b5f6;
+  text-align: center;
+}
+
+.about-container p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #e0e0e0;
+}
+
+.about-container ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #b3e5fc;
+}
+
+.about-container li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.about-container a {
+  color: #64b5f6;
+  text-decoration: none;
+}
+
+.about-container a:hover {
+  text-decoration: underline;
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 1rem;
+  }
+
+  .about-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-container p {
+    font-size: 0.9rem;
+  }
+
+  .about-image {
+    width: 100%;
+  }
+}
